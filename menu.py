@@ -1,19 +1,13 @@
-'''You have to run main.py using command python main.py in the terminal and it will run the program without need to run
-validation module and cashier module
-'''
-
-#import modul yang akan digunakan
 import transaction
 
 trnsct_123 = transaction.Transaction()
 
 def main_menu():
-    '''create menu for user and use every method in object trnsct_123 
-    '''
-    print()
-    print("=" * 10, "MAIN MENU CASHIER", "=" * 18)
-    print(" " * 7, "WELCOME TO SUPER CASHIER\n")
-    print("=" * 5, "Please enter one of the option", "=" * 10)
+    print(8*"=","WELCOME TO SUPER CASHIER",8*"=")
+    username = input("Username: ")
+
+    print(f"\n~ Enjoy Your Transaction Mr. {username} ~")
+    print("\nPlease select the option")
     print("1. Add new product")
     print("2. Update product")
     print("3. Delete product")
@@ -23,11 +17,9 @@ def main_menu():
     print("7. Exit")
     
     while True:
-        # input pilihan
         try:
             pilihan = input("Choose menu: ")
 
-            # pilihan menu
             if pilihan == '1':
                 trnsct_123.add_item()
                 main_menu()
@@ -52,6 +44,7 @@ def main_menu():
             else:
                 raise ValueError
         except ValueError:
-            print("Input according to menu")
+            print("Only the options listed in the menu")
+            print("Input and choose correctly!")
 
 main_menu()

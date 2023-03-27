@@ -9,15 +9,23 @@ class Transaction:
             product = input('Enter product name: ')
             price = int(input('Enter product price: '))
             quantity = int(input('Enter product quantity: '))
+            
+            if product in self.items:
+                raise ValueError(f"Don't input {product} twice!")
+            elif price < 0:
+                raise ValueError("Price value can't be negative")
+            elif quantity < 0:
+                raise ValueError("Quantity value can't be negative")
+            
             self.items[product] = {
                 'quantity': quantity,
                 'price': price,
                 'total_price' : quantity * price
                 }
-            print('Product successfully added!')
-        except KeyError:
-            print('Invalid input, please try again!')
-    
+            print('Product successfully added!')        
+        except Exception as e:
+            print(e)
+
     def delete_item(self):
         product = input('Enter product name you want to delete: ')
         try:
@@ -34,7 +42,7 @@ class Transaction:
             else:
                 raise ValueError
         except ValueError:
-            print('No product to be deleted')
+            print('There is empty transaction, please add item first!')
 
     def update_item(self):
         if len(self.items) != 0:
@@ -48,7 +56,7 @@ class Transaction:
                     else:
                         raise ValueError
                 except ValueError:
-                    print("There's no product name in transaction")
+                    print(f"There's no {product} in transaction")
             elif choose == 'quantity':
                 try:
                     product = input('Enter product that you wanna to update: ')
@@ -58,7 +66,7 @@ class Transaction:
                     else:
                         raise ValueError
                 except ValueError:
-                    print("There's no product name in transaction")
+                    print(f"There's no {product} in transaction")
             elif choose == 'price':
                 try:
                     product = input('Enter product that you wanna to update: ')
@@ -68,7 +76,7 @@ class Transaction:
                     else:
                         raise ValueError
                 except ValueError:
-                    print("There's no product name in transaction")
+                    print(f"There's no {product} in transaction")
         else:
             print('Please add product first!')
     
@@ -87,24 +95,24 @@ class Transaction:
                 total_price = self.items[key]['total_price']
                 rows = [table_no, product, quantity, price, total_price]
                 list_order.append(rows)
-            print(tabulate(list_order, tablefmt="fancy_grid"))
+            
+            if len(self.items) != 0:
+                print(tabulate(list_order, tablefmt="fancy_grid"))
     
     def total_price(self):
-        total = 0
+        total_price = 0
         for keys, _ in self.items.items():
-            total = total + (self.items[keys]['quantity']*self.items[keys]['price'])
+            total_price += (self.items[keys]['total_price'])
         
-        if total > 200_000 and total <= 300_000:
-            discount = 0.05
-            total = total - (total*discount)
-        elif total > 300_000 and total <= 500_000:
-            discount = 0.08
-            total = total - (total*discount)
-        elif total > 500_000:
-            discount = 0.1
-            total = total - (total*discount)
+        if total_price > 200_000 and total_price <= 300_000:
+            discount = 0.05*total_price
+        elif total_price > 300_000 and total_price <= 500_000:
+            discount = 0.08*total_price
+        elif total_price > 500_000:
+            discount = 0.1*total_price
         else:
-            total = total
+            total_price = total_price
         
-        print(f"You got discount {discount*100}% and your total price become Rp. {total}")
+        print(f"Your initial price is Rp. {total_price:.0f},-")
+        print(f"You got discount {discount*100}% and your total price become Rp. {(total_price-discount):.0f},-")
             
