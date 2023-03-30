@@ -2,19 +2,13 @@ import transaction
 
 trnsct_123 = transaction.Transaction()
 
+username = input("Username: ")
 def main_menu():
-    print(8*"=","WELCOME TO SUPER CASHIER",8*"=")
-    username = input("Username: ")
-
-    print(f"\n~ Enjoy Your Transaction Mr. {username} ~")
+    print("\n",8*"=","WELCOME TO SUPER CASHIER",8*"=")
+    print(2*" ",f"~ Enjoy Your Transaction Mr. {username} ~")
     print("\nPlease select the option")
-    print("1. Add new product")
-    print("2. Update product")
-    print("3. Delete product")
-    print("4. Reset transaction")
-    print("5. Check order")
-    print("6. Check total price")
-    print("7. Exit")
+    print("1. Add new product \n2. Update product \n3. Delete product \n4. Reset transaction \
+          \n5. Check order \n6. Check total price \n7. Exit program")
     
     while True:
         try:
