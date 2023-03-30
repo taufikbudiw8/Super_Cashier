@@ -1,12 +1,12 @@
 ## **SUPER CASHIER PROJECT**
----
+___
 Super cashier is a project which is the implementation of OOP and CRUD in fundamental python programming. 
 ___
 ### **Background and Goals of The Project**
 It started with market owner who is upgrading his business. This owner wants an update to the market transaction system, so that users could do and experience of transaction by themselves anytime and anywhere, and we can call it as self-service cashier system.
 
 Goals from super cashier project is to be able to create a simple and useful methods also functions for customer to do transactions by themselves.
-
+___
 ### **Code Short Explanation:**
 #### -  Attributes
 In this project, the instance attribute is used for initialize the data on the class, in this case `.items` would be initialized as a dictionary.
@@ -30,14 +30,14 @@ Displays menu functions to make it easier for customers to do self-service.
 
 #### -  Notes
 Conditions for discounts based on project guidance,
-   i. If above IDR 200,000 a discount of 5%
-  ii. If above IDR 300,000 a discount of 8%
- iii. If above IDR 500,000 a discount of 10%
----
+1. If above IDR 200,000 a discount of 5%
+2. If above IDR 300,000 a discount of 8%
+3. If above IDR 500,000 a discount of 10%
+___
 #### **Flowchart**
 This flowchart illustrates how the program works during the transactions.
-Flowcharts - Algorithm flowchart example.png
----
+![Flowcharts - Algorithm flowchart example](https://user-images.githubusercontent.com/124851791/228711908-37a29a89-95c3-4750-a877-0cbd54ebd9ae.png)
+___
 ### **Program Demonstration**
 Start the `menu`
 1. Test Case 1: `add_item`
