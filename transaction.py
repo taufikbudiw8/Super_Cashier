@@ -149,9 +149,10 @@ class Transaction:
                         #update product's price logic
                         if product in self.items:
                             #input last product's price after checking its name
-                            price = int(input('Enter new price of the product '))
+                            price = int(input('Enter new price of the product: '))
                             if price > 0 and int:
                                 self.items[product]['price'] = price
+                                self.items[product]['total_price'] = self.items[product]['price']*self.items[product]['quantity']
                             else:
                                 raise ValueError
                         else:

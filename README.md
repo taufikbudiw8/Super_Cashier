@@ -51,7 +51,7 @@ As we can see, there will be additional products in the dictionary(cart).
 2. Test Case 2: `update_item`
 ![update](https://user-images.githubusercontent.com/124851791/229718722-4e464d45-e7d5-475a-81a6-4231dd2aabab.png)
 As we can see, there will be a change in the initial product to a new product in the dictionary(cart)
-![check_order(update)](https://user-images.githubusercontent.com/124851791/229718974-570ac83b-b320-40c9-96ee-941e48305831.png)
+<img width="362" alt="check_order(update)" src="https://user-images.githubusercontent.com/124851791/229735588-b1eaea15-9dda-483b-b57a-9dae886fc02e.png">
 
 3. Test Case 3: `delete_item`
 ![delete_item](https://user-images.githubusercontent.com/124851791/229719019-181e353f-db48-419d-9116-322765621db8.png)
