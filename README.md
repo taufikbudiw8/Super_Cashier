@@ -36,34 +36,41 @@ Conditions for discounts based on project guidance,
 ___
 #### **Flowchart**
 This flowchart illustrates how the program works during the transactions.
-![Flowcharts - Algorithm flowchart example](https://user-images.githubusercontent.com/124851791/228711908-37a29a89-95c3-4750-a877-0cbd54ebd9ae.png)
+<img width="390" alt="flow" src="https://user-images.githubusercontent.com/124851791/229742483-8e33ac6e-8b48-4a0a-9c4c-7d154adc8c98.png">
 ___
 ### **Program Demonstration**
 Start the `menu`
+
 Don't forget to input your nickname first
-![menu](https://user-images.githubusercontent.com/124851791/229718154-1e412c7d-3f4d-4146-9229-4657e0342734.png)
+<img width="244" alt="menu" src="https://user-images.githubusercontent.com/124851791/229741178-363fd0dc-4a3b-411b-b8fe-806c33b071c2.png">
 
 1. Test Case 1: `add_item`
-![add_item](https://user-images.githubusercontent.com/124851791/229718244-bdc1a1ea-e33e-4f80-aa14-b9e9b25abe9f.png)
+<img width="247" alt="add_item" src="https://user-images.githubusercontent.com/124851791/229740066-fa650e39-245e-4262-9a43-4b12b44575ec.png">
 As we can see, there will be additional products in the dictionary(cart). 
-![check_order(add)](https://user-images.githubusercontent.com/124851791/229718430-f740a7d3-6390-4f0c-b4c9-8978f885441e.png)
+<img width="354" alt="check_order(add)" src="https://user-images.githubusercontent.com/124851791/229740152-9a20dbe8-aae1-4e14-ba33-d6bc687cbae1.png">
 
 2. Test Case 2: `update_item`
-![update](https://user-images.githubusercontent.com/124851791/229718722-4e464d45-e7d5-475a-81a6-4231dd2aabab.png)
+<img width="289" alt="update" src="https://user-images.githubusercontent.com/124851791/229740469-52179b22-8a15-4342-ba8b-e149b69da806.png">
+<img width="296" alt="update2" src="https://user-images.githubusercontent.com/124851791/229740495-b4442787-ae51-421a-8258-22ae6b66380d.png">
 As we can see, there will be a change in the initial product to a new product in the dictionary(cart)
 <img width="362" alt="check_order(update)" src="https://user-images.githubusercontent.com/124851791/229735588-b1eaea15-9dda-483b-b57a-9dae886fc02e.png">
 
 3. Test Case 3: `delete_item`
-![delete_item](https://user-images.githubusercontent.com/124851791/229719019-181e353f-db48-419d-9116-322765621db8.png)
+<img width="276" alt="delete_item" src="https://user-images.githubusercontent.com/124851791/229740568-de9a0a5c-26ab-4222-a675-e8bcb7e363e0.png">
 As we can see, product Pasta Gigi will be deleted from the dictionary(cart)
-![check_order(delete)](https://user-images.githubusercontent.com/124851791/229719303-caa7b62e-21ec-4097-adf0-d1299404caed.png)
+<img width="356" alt="check_order(delete)" src="https://user-images.githubusercontent.com/124851791/229740595-51a197a7-9daf-4b82-a44c-dddddfa31ce0.png">
 
 4. Test Case 4: `reset_item`
 After we delete all of product from the dictionary(cart), there will be no more products when we check it
-![reset](https://user-images.githubusercontent.com/124851791/229719364-8caec9d8-178e-4528-85b5-a1a92e3498d0.png)
+<img width="244" alt="reset" src="https://user-images.githubusercontent.com/124851791/229740645-f659a9d0-08da-4a17-9fcb-5f4a45678c9c.png">
 
 5. Test Case 6: `total_price`
-![total_price](https://user-images.githubusercontent.com/124851791/229719920-bc908843-40a9-4ad7-ad59-6c62ab41f790.png)
+
+Before `update_item`
+<img width="332" alt="total_price" src="https://user-images.githubusercontent.com/124851791/229740957-59658b63-14d1-4fb8-8983-13f673ac409e.png">
+
+After `update_item`
+<img width="338" alt="total price after update" src="https://user-images.githubusercontent.com/124851791/229741034-48ad5643-0f4f-45b3-911d-8d2b9b6d1df1.png">
 
 `Exit` from the program.
 
