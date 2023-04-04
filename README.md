@@ -45,7 +45,7 @@ Don't forget to input your nickname first
 
 1. Test Case 1: `add_item`
 ![add_item](https://user-images.githubusercontent.com/124851791/229718244-bdc1a1ea-e33e-4f80-aa14-b9e9b25abe9f.png)
-Ae can see, there will be additional products in the dictionary(cart). 
+As we can see, there will be additional products in the dictionary(cart). 
 ![check_order(add)](https://user-images.githubusercontent.com/124851791/229718430-f740a7d3-6390-4f0c-b4c9-8978f885441e.png)
 
 2. Test Case 2: `update_item`
