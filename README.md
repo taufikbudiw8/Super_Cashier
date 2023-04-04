@@ -40,6 +40,7 @@ This flowchart illustrates how the program works during the transactions.
 ___
 ### **Program Demonstration**
 Start the `menu`
+Don't forget to input your nickname first
 ![menu](https://user-images.githubusercontent.com/124851791/229718154-1e412c7d-3f4d-4146-9229-4657e0342734.png)
 
 1. Test Case 1: `add_item`
