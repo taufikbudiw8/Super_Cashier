@@ -1,17 +1,26 @@
+'''
+This module is used for running transaction module
+in form that more customer friendly.
+'''
+#import transaction module
 import transaction
 
+#running transaction module
 trnsct_123 = transaction.Transaction()
 
+#input customer name first
 username = input("Username: ")
+#main_menu method used for displaying the option that will help the customer in this transaction
 def main_menu():
     print("\n",8*"=","WELCOME TO SUPER CASHIER",8*"=")
     print(2*" ",f"~ Enjoy Your Transaction Mr. {username} ~")
     print("\nPlease select the option")
     print("1. Add new product \n2. Update product \n3. Delete product \n4. Reset transaction \
           \n5. Check order \n6. Check total price \n7. Exit program")
-    
+    #looping that used for returning back to menu after using with one transaction method
     while True:
         try:
+            #choose the menu logic
             pilihan = input("Choose menu: ")
 
             if pilihan == '1':
