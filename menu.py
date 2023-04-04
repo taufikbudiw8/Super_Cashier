@@ -1,6 +1,6 @@
 '''
 This module is used for running transaction module
-in form that more customer friendly.
+in form that more customer friendly
 '''
 #import transaction module
 import transaction

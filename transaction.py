@@ -1,7 +1,7 @@
 '''
 This module contains few method that will be run in module menu.py,
 using simple OOP to make this module(optional), 
-and using the implementation of "try-except".
+and using the implementation of "try-except"
 '''
 #import library that will be used for the functions below
 from tabulate import tabulate
