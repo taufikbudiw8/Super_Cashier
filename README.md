@@ -37,7 +37,7 @@ ___
 #### **Flowchart**
 This flowchart illustrates how the program works during the transactions.
 
-<img width="390" alt="flow" src="https://user-images.githubusercontent.com/124851791/229742483-8e33ac6e-8b48-4a0a-9c4c-7d154adc8c98.png">
+<img width="464" alt="Flowcharts - Algorithm flowchart example" src="https://user-images.githubusercontent.com/124851791/230620469-185c6945-6fb9-4ed1-af3d-46cc60f46689.png">
 
 ___
 ### **Program Demonstration**
@@ -74,7 +74,7 @@ After we delete all of product from the dictionary(cart), there will be no more 
 
 <img width="244" alt="reset" src="https://user-images.githubusercontent.com/124851791/229740645-f659a9d0-08da-4a17-9fcb-5f4a45678c9c.png">
 
-**5. Test Case 6**: `total_price`
+**5. Test Case 5**: `total_price`
 
 Before `update_item`
 
